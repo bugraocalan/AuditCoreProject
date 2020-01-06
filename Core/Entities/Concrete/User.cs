@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Core.Entities.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Core.Entities.Concrete
 {
-    public class User
+    public class User:IEntity
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
