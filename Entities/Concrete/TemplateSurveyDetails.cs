@@ -6,7 +6,7 @@ using System.Text;
 namespace Entities.Concrete
 {
 
-    class TemplateSurverDetails:IEntity
+  public  class TemplateSurveyDetails:IEntity
     {
         public int Id { get; set; }
         public int TemplateSurverMasterId { get; set; }
