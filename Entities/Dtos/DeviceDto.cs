@@ -7,6 +7,7 @@ namespace Entities.Dtos
 {
    public class DeviceDto:IDto
     {
+        public int DeviceId { get; set; }
         public string DeviceUUID { get; set; }
     }
 }
