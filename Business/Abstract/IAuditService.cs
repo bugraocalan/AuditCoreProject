@@ -9,7 +9,9 @@ namespace Business.Abstract
 {
     public interface IAuditService
     {
-        IResult CreateSurveyMaster(SurveyStartInfoDto dto,DeviceDto Devicedto);
+     
+
+        IResult CreateSurvey(SurveyStartInfoDto dto, DeviceDto deviceDto);
         IResult UpdateSurveyMasterByStartInfo(SurveyStartInfoDto dto);
         IResult FinishSurvey(SurveyFinishInfoDto dto);
         IResult SyncDevice(SurveySyncDto dto);

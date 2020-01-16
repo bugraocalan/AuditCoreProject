@@ -10,7 +10,8 @@ namespace Core.DataAccess.Abstract
     {
         T Get(Expression<Func<T,bool>> filter);
         IList<T> GetList(Expression<Func<T,bool>> filter=null);
-        void Add(T entity);
+        int Add(T entity);
+        void AddRange(List<T> entities);
         void Update(T entity);
         void Delete(T entity);
     }
