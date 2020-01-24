@@ -11,8 +11,8 @@ namespace Business.Abstract
     {
      
 
-        IResult CreateSurvey(SurveyStartInfoDto dto, DeviceDto deviceDto);
-        IResult UpdateSurveyMasterByStartInfo(SurveyStartInfoDto dto);
+        IResult CreateSurvey(AuditStartInfoDto dto, DeviceDto deviceDto);
+        IResult UpdateSurveyMasterByStartInfo(AuditStartInfoDto dto);
         IResult FinishSurvey(SurveyFinishInfoDto dto);
         IResult SyncDevice(SurveySyncDto dto);
 

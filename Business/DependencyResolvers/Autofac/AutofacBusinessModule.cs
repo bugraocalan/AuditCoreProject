@@ -25,7 +25,7 @@ namespace Business.DependencyResolvers.Autofac
 
             builder.RegisterType<AuditManager>().As<IAuditService>();
 
-            builder.RegisterType<CustomerManager>().As<ICustomerDal>();
+            builder.RegisterType<CustomerManager>().As<ICustomerService>();
             builder.RegisterType<EfCustomerDal>().As<ICustomerDal>();
 
             builder.RegisterType<SurveyDetailManager>().As<ISurveyDetailService>();
@@ -37,7 +37,7 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<TemplateSurveyDetailManager>().As<ITemplateSurveyDetailService>();
             builder.RegisterType<EfTemplateSurveyDetailDal>().As<ITemplateSurveyDetailDal>();
 
-            builder.RegisterType<TemplateSurveyMasterManager>().As<ITemplateSurveyMasterDal>();
+            builder.RegisterType<TemplateSurveyMasterManager>().As<ITemplateSurveyMasterService>();
             builder.RegisterType<EfTemplateSurveyMasterDal>().As<ITemplateSurveyMasterDal>();
 
             builder.RegisterType<AuthManager>().As<IAuthService>();

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Entities.Dtos
 {
-   public class SurveyStartInfoDto:IDto
+   public class AuditStartInfoDto:IDto
     {
         public int MasterId { get; set; }
         public int TemplateMasterId { get; set; }

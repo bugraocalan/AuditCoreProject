@@ -31,7 +31,7 @@ namespace Business.Concrete
             surveyMasterService = _surveyMasterService;
         }
 
-        public IResult CreateSurvey(SurveyStartInfoDto dto, DeviceDto deviceDto)
+        public IResult CreateSurvey(AuditStartInfoDto dto, DeviceDto deviceDto)
         {
             if (!surveyMasterService.IsExist(deviceDto).Success) return new ErrorResult(Messages.AuditMasterAlreadyExist);
             SurveyMasters master = new SurveyMasters()
@@ -76,7 +76,7 @@ namespace Business.Concrete
             throw new NotImplementedException();
         }
 
-        public IResult UpdateSurveyMasterByStartInfo(SurveyStartInfoDto dto)
+        public IResult UpdateSurveyMasterByStartInfo(AuditStartInfoDto dto)
         {
             throw new NotImplementedException();
         }
